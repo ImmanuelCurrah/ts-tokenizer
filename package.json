@@ -1,0 +1,26 @@
+{
+  "name": "ts-tokenizer",
+  "version": "0.0.1",
+  "description": "tokenizer using bpe training to encode input text",
+  "homepage": "https://github.com/ImmanuelCurrah/ts-tokenizer#readme",
+  "bugs": {
+    "url": "https://github.com/ImmanuelCurrah/ts-tokenizer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImmanuelCurrah/ts-tokenizer.git"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsx --test",
+    "test-ascii": "tsx --test --test-name-pattern='round-trips ASCII text after training' src/lib/tokenizer/tokenizer.test.ts"
+  },
+  "dependencies": {
+    "fast-check": "^4.10.2",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4"
+  }
+}
